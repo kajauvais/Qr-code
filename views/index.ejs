@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>Qr-Code Generator - Developed by Kaja</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <style>
+    
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        background-color: #95d5b2;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .qr-code h4{
+        font-size: 20px;
+        margin: 10px 0 20px 0;
+    }
+    .inputbox form input{
+        border: 1px solid #000;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px 0;
+        width: 90%;
+    }
+    .inputbox button{
+        text-decoration: none;
+        background-color: #14746f;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 500;
+        border: none;
+    }
+    .inputbox button{
+        margin: 20px 0;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="qr-code">
+            <h4>QR-Code Generator</h4>
+            <p>Paste a url or enter text to create QR code</p>
+            <div class="inputbox">
+                <form action="/result" method="post">
+                    <input type="text" placeholder="Enter Text or url" name="qrcodetext">
+                    <button type="submit">Generate QR Code</button>
+                </form>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>

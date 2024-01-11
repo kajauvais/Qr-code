@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr-Code Generator - Developed by Kaja</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+    body{
+        background-color: #95d5b2;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        background-color: #fff;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .button a{
+        text-decoration: none;
+        background-color: #14746f;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+    .button{
+        margin: 20px 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result">
+            <h3>Your QR-Code</h3>
+            <div class="qr-img">
+                <img src="<%= kaja %>" alt="">
+            </div>
+            <div class="button">
+                <a href="/">Regenerate</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
