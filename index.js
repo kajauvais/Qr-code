@@ -28,4 +28,4 @@ app.post('/result',(req,res)=>{
 // app.get('/result',(req,res)=>{
 //     res.sendFile(path.join(__dirname,'result.html'));
 // })
-app.listen(2104)
+app.listen(10000)
